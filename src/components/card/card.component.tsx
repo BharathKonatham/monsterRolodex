@@ -1,9 +1,13 @@
 import { Component } from "react";
 import './card.styles.css'
+import {Monster} from '../../App'
 
 
+type CardProps = {
+    monster: Monster
+}
 
-const Card = ({monster})=>{
+const Card = ({monster}:CardProps)=>{
     const {id,name,email} = monster
     return (
         <div >
